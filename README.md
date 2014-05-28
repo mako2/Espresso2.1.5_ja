@@ -135,6 +135,17 @@ Github を利用しますのでデスクトップで作業するには Githubク
 * 半角記号はそのまま使用。 例) : や ; など。? などの感嘆符、疑問符は全角にしました。
 * 翻訳しない半角英数の前後は半角スペースを入れる。ただし単語の前が句読点や半角記号で終わる場合はそのままとする。 例) クリックすると検索結果を消去。Option + クリックで検索条件を変更
 
+### ローカライズする .iLocalize ファイル
+拡張子が .iLocalize のファイルをローカライズします。作業しやすいようにトップディレクトリにショートカットを用意しています。  
+
+* Resources>ja_lproj.ilocalize
+* Resources.ilocalize
+* Resources>EspressoPrivate_espressoplugin.ilocalize
+* SharedSupport>Plug-Ins>CSS.ilocalize
+* SharedSupport>Plug-Ins>Markdown.ilocalize
+* SharedSupport>Plug-Ins>TEA.ilocalize
+* SharedSupport>Plug-Ins>XML.ilocalize
+
 
 インターフェイスの修正
 -----------------
