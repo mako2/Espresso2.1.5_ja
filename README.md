@@ -1,0 +1,136 @@
+Espresso2.1.5_ja
+============
+これは2ちゃんねるの新・Mac板 [Espresso : Web統合開発環境 【MacRabbit】](http://anago.2ch.net/test/read.cgi/mac/1321757964/) スレッドで派生した Espresso2(2.1.5) のローカライズ(日本語化)プロジェクトです。  
+[POEditor](https://poeditor.com/) の無料アカウントで作業していましたが、アカウントを半年放置するとプロジェクトごと削除されるようで…ローカライズ専用サービスだったので作業はしやすかったのですが Github に移行することにしました。
+
+ローカライズが必要なファイル
+----------------------
+
+ローカライズが必要なファイルは、Espresso.app を右クリックして「パッケージの内容を表示」で確認できます。  
+
+`Espresso.app/Contents/Resources/`
+
+上記 Resources フォルダ 内の English.lproj フォルダが主なローカライズ作業の対象となります。
+
+まず English.lproj をコピーして ja.lproj と名称を変更し中のファイルをローカライズしていきます。  
+ローカライズが必要なのは以下のファイルのようです。  
+Espresso.app/Contents/Resources/ja.lproj
+
+* EKSyntaxDebugger.nib
+* EKSyntaxInspector.nib
+* Espresso.nib
+* EspressoActivation.nib
+* EspressoActivationTrialPanel.nib
+* EspressoPreferences.nib
+* ESSearchSource.nib
+* PublishSettings.nib
+* server-browser.sidebar.permissions.nib
+* ServerBookmarkEditor.nib
+* StyleFavorites.nib
+* StyleFontPanel.nib
+* StyleOverrideInspector.nib
+* StyleOverridePanel.nib
+* SyntaxThemePreferences.nib
+* CSSTools.strings
+* EditorKit.strings  / Espresso.nib と連動 / Clear Menu
+* ESPreview.strings
+* FSClient.strings
+* InfoPlist.strings
+* Localizable.strings
+* MRApplicationUtilities.strings
+* EspressoHelpBook (ヘルプ用ファイル)
+
+- - -
+名称変更した ja.lproj と同じディレクトリにある以下のファイルもローカライズをする必要がありますが、優先順位は2番目です。  
+
+* GotoLine.nib
+* MRProgressPanel.nib
+* PlugInPreferences.nib
+* ProjectManager.nib
+* Snippets.nib
+* SugarUpdater.nib
+* TEAEnterAbbreviationSheet.nib
+* UserSnippetsManager.nib
+* Welcome.nib
+* XRayInspector.nib
+* Tabs.strings / Espresso.nib と連動
+
+以下はリコンパイル出来なかったり編集の必要が無いファイルです。
+
+* ColorPicker.nib / リコンパイル不可
+* ESStyleMultiPartItems.nib / リコンパイル不可
+* ESTestCSSTool.nib / 編集箇所無し
+* StyleEditors.nib / 編集箇所無し
+* SUStatus.nib / 元々のインターフェイスが意味不明なので放置
+
+
+- - -
+ja.lproj と同じディレクトリにある以下の4つのプラグインもパッケージの構造をしているので、右クリックして「パッケージの内容を表示」で必要なファイルをローカライズしていきます。優先順位は3番目です。  
+例) `Espresso.app/Contents/Resources/EspressoPrivate.espressoplugin/Contents/Resources/ja.lproj` (en.lproj をコピーして名称変更)
+
+* EspressoPrivate.espressoplugin
+* Selectors.espressoplugin
+* Snippets.espressoplugin
+* SyntaxTheme.espressoplugin
+
+
+
+ローカライズの手順
+--------------
+
+ローカライズの手順を解説しています。
+
+### 必要なアプリケーション
+
+* [nibTranslate Light.app](https://itunes.apple.com/jp/app/nibtranslate-light/id419607106?mt=12)  
+* [iLocalize.app](https://itunes.apple.com/jp/app/ilocalize/id437165919?mt=12)
+
+nibTranslate Light.app は使いやすいのですが、無料版だと書き出し機能が無いので今回は iLocalize.app を使用します。
+
+### iLocalize の使い方
+
+1. 拡張子が .ilocalize のショートカットをダブルクリックすると iLocalize.app が起動します。 
+2. ウィンドウ左上のプルダウンメニューを「日本語」にします。
+3. 任意のファイルを選択して日本語に翻訳します。
+
+####編集してはいけない状態および英語
+
+以下の英語は翻訳しないでください
+
+1. 状態が = のもの(黒丸の中にイコール)
+2. Text Cell
+3. OtherViews
+4. Radio
+5. Window
+
+### ローカライズのルール
+
+* 半角記号はそのまま使用。 例) : など。? などの感嘆符、疑問符は全角にしました。
+* 翻訳しない半角英数の前後は半角スペースを入れる。ただし単語の前が句読点や半角記号で終わる場合はそのままとする。 例) クリックすると検索結果を消去。Option + クリックで検索条件を変更
+
+
+インターフェイスの修正
+-----------------
+
+以下はローカライズしたテキストが切れるなどの不具合があるので修正が必要なファイルです。
+
+* Espresso.app/Contents/Resources/ja.lproj/EspressoPreferences.nib
+
+
+ローカライズの下準備
+---------------
+
+ここはローカライズ作業に直接関係ないので読み飛ばしても構いません。
+
+### 拡張子が .nib のファイル
+このファイルは簡単に言うとGUIファイルです。  
+ほとんどのnibファイルはコンパイルされていてそのままでは編集できないので、[NibUnlocker.app](http://www.charlessoft.com) を使ってリコンパイルします。
+リコンパイルされたファイルはxib形式で保存され Xcode で編集が可能になります。
+
+次に生成されたxibファイルを Xcode でnibファイルとして別名保存します。（Xcode が落ちる場合は、名称を変えてxibファイルとして保存 → それをnibファイルとして別名保存 → 名称を元に戻す、これで上手くいきます。）
+
+### 拡張子が .strings のファイル
+このファイルはローカライズ専用のファイルですのでそのままで編集出来ます。
+
+### iLocalize に読み込むための準備
+iLocalize.app は、２つの言語ファイル（フォルダ）を読み込んで比較しながら作業をするように出来ているようです。ですので Github にある全てのローカライズ用フォルダは English.lproj と ja.lproj の様に2つの言語フォルダで構成されています。

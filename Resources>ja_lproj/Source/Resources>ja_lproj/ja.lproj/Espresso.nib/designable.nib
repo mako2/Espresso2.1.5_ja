@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="2" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="136" id="137"/>
+            </connections>
+        </customObject>
+        <menu title="メインメニュー" systemMenu="main" id="3">
+            <items>
+                <menuItem title="Espresso" id="4">
+                    <menu key="submenu" title="Espresso" systemMenu="apple" id="5">
+                        <items>
+                            <menuItem title="Espresso について" id="6">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="151"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="アップデートを確認…" id="7">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="136" id="189"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="8">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="環境設定…" keyEquivalent="," id="9">
+                                <connections>
+                                    <action selector="showPreferences:" target="136" id="160"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="キャッシュを消去…" id="10">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="emptyCaches:" target="-1" id="219"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="11">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="サービス" id="12">
+                                <menu key="submenu" title="サービス" systemMenu="services" id="13"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="14">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Espresso を隠す" keyEquivalent="h" id="15">
+                                <connections>
+                                    <action selector="hide:" target="-2" id="161"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="他を隠す" keyEquivalent="h" id="16">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-2" id="163"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="すべてを表示" id="17">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-2" id="164"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="18">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Espresso を終了" keyEquivalent="q" id="19">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="162"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="ファイル" id="20">
+                    <menu key="submenu" title="ファイル" id="21">
+                        <items>
+                            <menuItem title="新規プロジェクト…" keyEquivalent="N" id="22">
+                                <connections>
+                                    <action selector="newProject:" target="136" id="188"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="新規ファイル" keyEquivalent="n" id="23">
+                                <connections>
+                                    <action selector="newDocument:" target="-1" id="157"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="New Tab" keyEquivalent="t" id="24">
+                                <connections>
+                                    <action selector="newTab:" target="-1" id="196"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="開く…" keyEquivalent="o" id="25">
+                                <connections>
+                                    <action selector="openDocument:" target="-1" id="152"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="プロジェクトを開く" state="on" id="26">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="プロジェクトを開く" id="27">
+                                    <items>
+                                        <menuItem title="&lt;Do Not Localize>" id="28">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showHelp:" target="-2" id="210"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="最近使った項目を開く" id="29">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="最近使った項目を開く" id="30">
+                                    <items>
+                                        <menuItem title="Clear Menu" id="31">
+                                            <connections>
+                                                <action selector="clearRecentDocuments:" target="-1" id="209"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="32">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="ウィンドウを閉じる" keyEquivalent="w" id="33">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="153"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Close Tab" keyEquivalent="w" id="34">
+                                <connections>
+                                    <action selector="closeCurrentTab:" target="-1" id="185"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="他のタブを閉じる" alternate="YES" keyEquivalent="w" id="35">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="closeInactiveTabs:" target="-1" id="186"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="保存" keyEquivalent="s" id="36">
+                                <connections>
+                                    <action selector="saveDocument:" target="-1" id="154"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="別名で保存…" keyEquivalent="S" id="37">
+                                <connections>
+                                    <action selector="saveDocumentAs:" target="-1" id="156"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="すべてを保存" keyEquivalent="s" id="38">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="saveAllDocuments:" target="-1" id="181"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="最後に保存した状態に戻す" id="39">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="revertDocumentToSaved:" target="-1" id="159"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="プリント…" keyEquivalent="p" id="40">
+                                <connections>
+                                    <action selector="printDocument:" target="-1" id="155"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="41"/>
+                            <menuItem title="アクション" id="42">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="43">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="ワークスペースを表示" keyEquivalent="w" id="44">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="showWorkspaceTabs:" target="-1" id="211"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="クイックフィルタを表示" keyEquivalent="q" id="45">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="toggleShowQuickFilter:" target="-1" id="207"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="プロジェクトを検索…" keyEquivalent="F" id="46">
+                                <connections>
+                                    <action selector="showProjectSearch:" target="-1" id="212"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="47"/>
+                            <menuItem title="プロジェクト設定…" id="48">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showSettings:" target="-1" id="216"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="編集" id="49">
+                    <menu key="submenu" title="編集" id="50">
+                        <items>
+                            <menuItem title="Undo" keyEquivalent="z" id="51">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="168"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="52">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="176"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="53">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="カット" keyEquivalent="x" id="54">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="169"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="コピー" keyEquivalent="c" id="55">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="167"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="ペースト" keyEquivalent="v" id="56">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="174"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="&lt;Do Not Localize: Alternate Paste>" alternate="YES" keyEquivalent="v" id="57">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="pasteWithAlternateIndentationBehavior:" target="-1" id="213"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="削除" id="58">
+                                <connections>
+                                    <action selector="delete:" target="-1" id="172"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="&lt;Do Not Localize: Smart Delete>" id="59">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
+                                <connections>
+                                    <action selector="delete:" target="-1" id="222"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="複製" keyEquivalent="d" id="60">
+                                <connections>
+                                    <action selector="duplicate:" target="-1" id="221"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="すべてを選択" keyEquivalent="a" id="61">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="175"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="62">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="検索" id="63">
+                                <menu key="submenu" title="検索" id="64">
+                                    <items>
+                                        <menuItem title="検索…" tag="1" keyEquivalent="f" id="65">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="165"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="次を検索" tag="2" keyEquivalent="g" id="66">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="173"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="前を検索" tag="3" keyEquivalent="G" id="67">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="171"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="選択部分を検索に使用" tag="7" keyEquivalent="e" id="68">
+                                            <connections>
+                                                <action selector="performFindPanelAction:" target="-1" id="170"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="選択部分へジャンプ" keyEquivalent="j" id="69">
+                                            <connections>
+                                                <action selector="centerSelectionInVisibleArea:" target="-1" id="166"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="指定の行へ移動..." keyEquivalent="l" id="70">
+                                <connections>
+                                    <action selector="goToLine:" target="-1" id="208"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="71"/>
+                            <menuItem title="スペルと文法" id="72">
+                                <menu key="submenu" title="スペルと文法" id="73">
+                                    <items>
+                                        <menuItem title="Spelling…" keyEquivalent=":" id="74">
+                                            <connections>
+                                                <action selector="showGuessPanel:" target="-1" id="177"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="スペルをチェック" keyEquivalent=";" id="75">
+                                            <connections>
+                                                <action selector="checkSpelling:" target="-1" id="178"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="入力中にスペルをチェック" id="76">
+                                            <connections>
+                                                <action selector="toggleContinuousSpellChecking:" target="-1" id="179"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="表示" id="77">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="表示" id="78">
+                        <items>
+                            <menuItem title="Toggle Toolbar" id="79">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="toggleToolbarShown:" target="-1" id="194"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="80"/>
+                            <menuItem title="Toggle Tools" keyEquivalent="0" id="81">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleToolsShown:" target="-1" id="198"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="言語" id="82">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="言語" id="83">
+                                    <items>
+                                        <menuItem title="&lt;Do Not Localize>" id="84">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="actionMenu:" target="-1" id="193"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="コードの折りたたみ" id="85">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="コードの折りたたみ" id="86">
+                                    <items>
+                                        <menuItem title="&lt;Do Not Localize>" id="87">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="actionMenu:" target="-1" id="195"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="88"/>
+                            <menuItem title="テキストエンコーディング" id="89">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="テキストエンコーディング" id="90">
+                                    <items>
+                                        <menuItem title="&lt;Do Not Localize>" id="91">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="actionMenu:" target="-1" id="206"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="改行" id="92">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="改行" id="93">
+                                    <items>
+                                        <menuItem title="Unix の改行コード (LF)" id="94">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="changeLineEndingType:" target="-1" id="182"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="クラシック Mac の改行コード (CR)" tag="1" id="95">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="changeLineEndingType:" target="-1" id="183"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Windows の改行コード (CRLF)" tag="2" id="96">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="changeLineEndingType:" target="-1" id="184"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="97"/>
+                            <menuItem title="隠しファイルを表示" id="98">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="toggleShowHiddenFiles:" target="-1" id="215"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="99"/>
+                            <menuItem title="フルスクリーンにする" keyEquivalent="f" id="100">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleFullScreen:" target="-1" id="220"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="アクション" id="101">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="アクション" id="102">
+                        <items>
+                            <menuItem title="&lt;Action Menu>" id="103">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="actionMenu:" target="-1" id="192"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="104"/>
+                            <menuItem title="シンタックスインスペクタを表示" id="105">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showSyntaxInspector:" target="-1" id="187"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="スニペットを表示" id="106">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showSnippets:" target="-1" id="218"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="プレビュー" id="107">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="プレビュー" id="108">
+                        <items>
+                            <menuItem title="(do not localize - open web preview)" keyEquivalent="p" id="109">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="newWebPreview:" target="-1" id="202"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="再読み込み" keyEquivalent="r" id="110">
+                                <connections>
+                                    <action selector="reload:" target="-1" id="200"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="111"/>
+                            <menuItem title="場所を開く…" id="112">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="focusLocationBar:" target="-1" id="201"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="X-ray を切り替え" keyEquivalent="x" id="113">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleElementSelection:" target="-1" id="217"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="114"/>
+                            <menuItem title="テキストを大きく" keyEquivalent="+" id="115">
+                                <connections>
+                                    <action selector="makeTextLarger:" target="-1" id="203"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="デフォルトのサイズ" keyEquivalent="0" id="116">
+                                <connections>
+                                    <action selector="makeTextStandardSize:" target="-1" id="204"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="テキストを小さく" keyEquivalent="-" id="117">
+                                <connections>
+                                    <action selector="makeTextSmaller:" target="-1" id="205"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="ウィンドウ" id="118">
+                    <menu key="submenu" title="ウィンドウ" systemMenu="window" id="119">
+                        <items>
+                            <menuItem title="しまう" keyEquivalent="m" id="120">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="150"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="拡大／縮小" id="121">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="180"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="122"/>
+                            <menuItem title="&lt;Do Not Localize; tab actions>" id="123">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="actionMenu:" target="-1" id="197"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="124"/>
+                            <menuItem title="プロジェクト" keyEquivalent="1" id="125">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showProjects:" target="136" id="214"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="126">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="すべてを手前に移動" id="127">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="149"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="ヘルプ" id="128">
+                    <menu key="submenu" title="ヘルプ" id="129">
+                        <items>
+                            <menuItem title="Espresso ヘルプ" keyEquivalent="?" id="130">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="158"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="131"/>
+                            <menuItem title="Sugar プラグインを取得…" id="132">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showAvailableSugars:" target="136" id="199"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Espresso Wiki を表示" id="133">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showWiki:" target="136" id="190"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="134"/>
+                            <menuItem title="フィードバックを送る…" id="135">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="sendFeedback:" target="136" id="191"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="136" customClass="ESApplicationManager">
+            <connections>
+                <outlet property="deleteAndFixSpacingMenuItem" destination="59" id="138"/>
+                <outlet property="duplicateMenuItem" destination="60" id="139"/>
+                <outlet property="encodingMenu" destination="90" id="140"/>
+                <outlet property="fileActionMenuItem" destination="42" id="141"/>
+                <outlet property="foldingMenu" destination="86" id="142"/>
+                <outlet property="goToLineMenuItem" destination="70" id="143"/>
+                <outlet property="languageMenu" destination="83" id="144"/>
+                <outlet property="openLocationMenuItem" destination="112" id="145"/>
+                <outlet property="projectsMenuItem" destination="26" id="146"/>
+                <outlet property="textMenu" destination="102" id="147"/>
+                <outlet property="windowsMenu" destination="119" id="148"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

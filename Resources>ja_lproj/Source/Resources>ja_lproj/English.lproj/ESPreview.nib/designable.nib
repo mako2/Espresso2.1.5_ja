@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="EXPreview">
+            <connections>
+                <outlet property="pathBar" destination="84" id="88"/>
+                <outlet property="toolbarLocationView" destination="83" id="89"/>
+                <outlet property="xRayControl" destination="86" id="90"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="82" customClass="NSApplication"/>
+        <customView id="83">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <customView id="84" customClass="ESWebPathBar">
+                    <rect key="frame" x="0.0" y="5" width="312" height="23"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <action selector="takeLocation:" target="-2" id="91"/>
+                    </connections>
+                </customView>
+                <customView id="85">
+                    <rect key="frame" x="312" y="4" width="38" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <segmentedControl verticalHuggingPriority="750" id="86">
+                            <rect key="frame" x="-16" y="0.0" width="51" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="selectOne" id="87">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment width="12"/>
+                                    <segment image="preview.toolbar.xray.Template" width="32" tag="1"/>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <action selector="toggleElementSelection:" target="-2" id="92"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                </customView>
+            </subviews>
+        </customView>
+    </objects>
+    <resources>
+        <image name="preview.toolbar.xray.Template" width="128" height="128"/>
+    </resources>
+</document>
