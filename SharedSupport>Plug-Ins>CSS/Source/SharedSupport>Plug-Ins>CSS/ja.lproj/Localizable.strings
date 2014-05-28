@@ -1,0 +1,12 @@
+﻿"com.macrabbit.text-actions.css.new-style.snippet-fragment(style-name)" = "style";
+"com.macrabbit.text-actions.css.new-group.snippet-fragment(group-name)" = "Untitled Group";
+
+"com.macrabbit.text-actions.css.new-style.title" = "New Style";
+"com.macrabbit.text-tools.css.new-style.label" = "New Style";
+"com.macrabbit.text-tools.css.new-style.tooltip" = "Add a new style rule";
+"com.macrabbit.text-tools.css.new-style.default-name" = "style";
+
+"com.macrabbit.text-actions.css.new-group.title" = "New Group";
+"com.macrabbit.text-tools.css.new-group.label" = "New Group";
+"com.macrabbit.text-tools.css.new-group.tooltip" = "Add a new group; select multiple items to group them";
+"com.macrabbit.text-tools.css.new-group.default-name" = "Untitled Group";

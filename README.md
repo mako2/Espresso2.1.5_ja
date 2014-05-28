@@ -68,14 +68,35 @@ Espresso.app/Contents/Resources/ja.lproj
 
 
 - - -
-ja.lproj と同じディレクトリにある以下の4つのプラグインもパッケージの構造をしているので、右クリックして「パッケージの内容を表示」で必要なファイルをローカライズしていきます。優先順位は3番目です。  
+ja.lproj と同じディレクトリにあるプラグインもパッケージの構造をしているので、右クリックして「パッケージの内容を表示」で必要なファイルをローカライズしていきます。優先順位は3番目です。  
 例) `Espresso.app/Contents/Resources/EspressoPrivate.espressoplugin/Contents/Resources/ja.lproj` (en.lproj をコピーして名称変更)
 
 * EspressoPrivate.espressoplugin
+
+
+以下は編集の必要が無いプラグインです。
+
 * Selectors.espressoplugin
 * Snippets.espressoplugin
 * SyntaxTheme.espressoplugin
 
+- - -
+Resources と同じディレクトリにある SharedSupport の中にもプラグインがあるのでこちらもローカライズ作業を行います。  
+Espresso.app/Contents/SharedSupport/Plug-Ins
+
+* CSS.espressoplugin
+* Markdown.espressoplugin
+* TEA for Espresso.espressoplugin
+* XML-and-HTML.espressoplugin
+
+以下は編集の必要が無いプラグインです。
+
+* Apache.espressoplugin
+* JavaScript.espressoplugin
+* PHP.espressoplugin
+* Python.espressoplugin
+* Regex.espressoplugin
+* Ruby.espressoplugin
 
 
 ローカライズの手順
