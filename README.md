@@ -85,10 +85,13 @@ ja.lproj と同じディレクトリにある以下の4つのプラグインも�
 
 ### 必要なアプリケーション
 
-* [nibTranslate Light.app](https://itunes.apple.com/jp/app/nibtranslate-light/id419607106?mt=12)  
-* [iLocalize.app](https://itunes.apple.com/jp/app/ilocalize/id437165919?mt=12)
+Github を利用しますのでデスクトップで作業するには Githubクライアントが必要です。公式アプリの他、サードパーティー製の有料のものもあります。  
+ローカライズ作業は iLocalize.app を使用します。
 
-nibTranslate Light.app は使いやすいのですが、無料版だと書き出し機能が無いので今回は iLocalize.app を使用します。
+* [Github.app](https://mac.github.com) / 無料の公式 Github クライアント
+* [iLocalize.app](https://itunes.apple.com/jp/app/ilocalize/id437165919?mt=12) / 無料
+
+([nibTranslate Light.app](https://itunes.apple.com/jp/app/nibtranslate-light/id419607106?mt=12) は使いやすいのですが、無料版だと書き出し機能が無いので今回は iLocalize.app を使用します。)
 
 ### iLocalize の使い方
 
@@ -96,9 +99,9 @@ nibTranslate Light.app は使いやすいのですが、無料版だと書き出
 2. ウィンドウ左上のプルダウンメニューを「日本語」にします。
 3. 任意のファイルを選択して日本語に翻訳します。
 
-####編集してはいけない状態および英語
+####編集してはいけない状態および英文
 
-以下の英語は翻訳しないでください
+以下の英文は翻訳しないでください
 
 1. 状態が = のもの(黒丸の中にイコール)
 2. Text Cell
@@ -108,7 +111,7 @@ nibTranslate Light.app は使いやすいのですが、無料版だと書き出
 
 ### ローカライズのルール
 
-* 半角記号はそのまま使用。 例) : など。? などの感嘆符、疑問符は全角にしました。
+* 半角記号はそのまま使用。 例) : や ; など。? などの感嘆符、疑問符は全角にしました。
 * 翻訳しない半角英数の前後は半角スペースを入れる。ただし単語の前が句読点や半角記号で終わる場合はそのままとする。 例) クリックすると検索結果を消去。Option + クリックで検索条件を変更
 
 
