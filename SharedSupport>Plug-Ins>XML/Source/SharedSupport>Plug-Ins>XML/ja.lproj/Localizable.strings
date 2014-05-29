@@ -1,5 +1,5 @@
-﻿"com.macrabbit.text-tools.xmlhtml.new-tag.label" = "New Tag";
-"com.macrabbit.text-actions.xmlhtml.new-tag.title" = "New Tag";
-"com.macrabbit.text-actions.close-tag.alias.title" = "Close Tag";
-"com.macrabbit.text-actions.close-tag.alias-embedded.title" = "Close Tag";
-"com.macrabbit.text-actions.close-tag.alias-embedded-shortcut.title" = "Close Tag";
+﻿"com.macrabbit.text-tools.xmlhtml.new-tag.label" = "新規タグ";
+"com.macrabbit.text-actions.xmlhtml.new-tag.title" = "新規タグ";
+"com.macrabbit.text-actions.close-tag.alias.title" = "タグを閉じる";
+"com.macrabbit.text-actions.close-tag.alias-embedded.title" = "タグを閉じる";
+"com.macrabbit.text-actions.close-tag.alias-embedded-shortcut.title" = "タグを閉じる";
