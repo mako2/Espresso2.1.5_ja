@@ -58,10 +58,10 @@ Espresso.app/Contents/Resources/ja.lproj
 * XRayInspector.nib
 * Tabs.strings / Espresso.nib と連動
 
-以下はリコンパイル出来なかったり編集の必要が無いファイルです。
+以下は再コンパイル出来なかったり編集の必要が無いファイルです。
 
-* ColorPicker.nib / リコンパイル不可
-* ESStyleMultiPartItems.nib / リコンパイル不可
+* ColorPicker.nib / 再コンパイル不可
+* ESStyleMultiPartItems.nib / 再コンパイル不可
 * ESTestCSSTool.nib / 編集箇所無し
 * StyleEditors.nib / 編集箇所無し
 * SUStatus.nib / 元々のインターフェイスが意味不明なので放置
@@ -162,8 +162,8 @@ Github を利用しますのでデスクトップで作業するには Githubク
 
 ### 拡張子が .nib のファイル
 このファイルは簡単に言うとGUIファイルです。  
-ほとんどのnibファイルはコンパイルされていてそのままでは編集できないので、[NibUnlocker.app](http://www.charlessoft.com) を使ってリコンパイルします。
-リコンパイルされたファイルはxib形式で保存され Xcode で編集が可能になります。
+ほとんどのnibファイルはコンパイルされていてそのままでは編集できないので、[NibUnlocker.app](http://www.charlessoft.com) を使って再コンパイルします。
+再コンパイルされたファイルはxib形式で保存され Xcode で編集が可能になります。
 
 次に生成されたxibファイルを Xcode でnibファイルとして別名保存します。（Xcode が落ちる場合は、名称を変えてxibファイルとして保存 → それをnibファイルとして別名保存 → 名称を元に戻す、これで上手くいきます。）
 
