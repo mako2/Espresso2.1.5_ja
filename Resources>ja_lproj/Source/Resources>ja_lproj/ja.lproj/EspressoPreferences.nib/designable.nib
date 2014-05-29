@@ -64,7 +64,7 @@
                     </connections>
                 </matrix>
                 <textField verticalHuggingPriority="750" id="13">
-                    <rect key="frame" x="67" y="41" width="116" height="17"/>
+                    <rect key="frame" x="41" y="41" width="142" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="ドキュメントを開く:" id="14">
                         <font key="font" metaFont="system"/>
