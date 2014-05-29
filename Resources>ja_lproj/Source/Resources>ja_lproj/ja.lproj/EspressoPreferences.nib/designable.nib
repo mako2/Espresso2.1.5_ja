@@ -187,7 +187,7 @@
                     </textFieldCell>
                 </textField>
                 <textField verticalHuggingPriority="750" id="36">
-                    <rect key="frame" x="63" y="319" width="78" height="17"/>
+                    <rect key="frame" x="15" y="319" width="126" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="エディタのフォント:" id="37">
                         <font key="font" metaFont="system"/>
@@ -249,10 +249,10 @@
                     </connections>
                 </button>
                 <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" id="48">
-                    <rect key="frame" x="145" y="20" width="125" height="58"/>
+                    <rect key="frame" x="145" y="20" width="260" height="58"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    <size key="cellSize" width="125" height="18"/>
+                    <size key="cellSize" width="260" height="18"/>
                     <size key="intercellSpacing" width="4" height="2"/>
                     <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="49">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -290,7 +290,7 @@
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" id="55">
-                    <rect key="frame" x="42" y="276" width="99" height="17"/>
+                    <rect key="frame" x="15" y="276" width="126" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="スマートペースト:" id="56">
                         <font key="font" metaFont="system"/>
@@ -299,10 +299,10 @@
                     </textFieldCell>
                 </textField>
                 <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" id="57">
-                    <rect key="frame" x="145" y="255" width="250" height="38"/>
+                    <rect key="frame" x="145" y="255" width="285" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    <size key="cellSize" width="250" height="18"/>
+                    <size key="cellSize" width="285" height="18"/>
                     <size key="intercellSpacing" width="4" height="2"/>
                     <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="58">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
