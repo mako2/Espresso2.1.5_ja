@@ -19,84 +19,84 @@ Espresso2.1.5_ja
 ローカライズが必要なのは以下のファイルのようです。  
 Espresso.app/Contents/Resources/ja.lproj
 
-* EKSyntaxDebugger.nib
-* EKSyntaxInspector.nib
-* Espresso.nib
-* EspressoActivation.nib
-* EspressoActivationTrialPanel.nib
-* EspressoPreferences.nib
-* ESSearchSource.nib
-* PublishSettings.nib
-* server-browser.sidebar.permissions.nib
-* ServerBookmarkEditor.nib
-* StyleFavorites.nib
-* StyleFontPanel.nib
-* StyleOverrideInspector.nib
-* StyleOverridePanel.nib
-* SyntaxThemePreferences.nib
-* CSSTools.strings
-* EditorKit.strings  / Espresso.nib と連動 / Clear Menu
-* ESPreview.strings
-* FSClient.strings
-* InfoPlist.strings
-* Localizable.strings
-* MRApplicationUtilities.strings
-* EspressoHelpBook (ヘルプ用ファイル)
+- EKSyntaxDebugger.nib
+- EKSyntaxInspector.nib
+- Espresso.nib
+- EspressoActivation.nib
+- EspressoActivationTrialPanel.nib
+- EspressoPreferences.nib
+- ESSearchSource.nib
+- PublishSettings.nib
+- server-browser.sidebar.permissions.nib
+- ServerBookmarkEditor.nib
+- StyleFavorites.nib
+- StyleFontPanel.nib
+- StyleOverrideInspector.nib
+- StyleOverridePanel.nib
+- SyntaxThemePreferences.nib
+- CSSTools.strings
+- EditorKit.strings  / Espresso.nib と連動 / Clear Menu
+- ESPreview.strings
+- FSClient.strings
+- InfoPlist.strings
+- Localizable.strings
+- MRApplicationUtilities.strings
+- EspressoHelpBook (ヘルプ用ファイル)
 
 - - -
 名称変更した ja.lproj と同じディレクトリにある以下のファイルもローカライズをする必要がありますが、優先順位は2番目です。  
 
-* GotoLine.nib
-* MRProgressPanel.nib
-* PlugInPreferences.nib
-* ProjectManager.nib
-* Snippets.nib
-* SugarUpdater.nib
-* TEAEnterAbbreviationSheet.nib
-* UserSnippetsManager.nib
-* Welcome.nib
-* XRayInspector.nib
-* Tabs.strings / Espresso.nib と連動
+- GotoLine.nib
+- MRProgressPanel.nib
+- PlugInPreferences.nib
+- ProjectManager.nib
+- Snippets.nib
+- SugarUpdater.nib
+- TEAEnterAbbreviationSheet.nib
+- UserSnippetsManager.nib
+- Welcome.nib
+- XRayInspector.nib
+- Tabs.strings / Espresso.nib と連動
 
 以下は再コンパイル出来なかったり編集の必要が無いファイルです。
 
-* ColorPicker.nib / 再コンパイル不可
-* ESStyleMultiPartItems.nib / 再コンパイル不可
-* ESTestCSSTool.nib / 編集箇所無し
-* StyleEditors.nib / 編集箇所無し
-* SUStatus.nib / 元々のインターフェイスが意味不明なので放置
+- ColorPicker.nib / 再コンパイル不可
+- ESStyleMultiPartItems.nib / 再コンパイル不可
+- ESTestCSSTool.nib / 編集箇所無し
+- StyleEditors.nib / 編集箇所無し
+- SUStatus.nib / 元々のインターフェイスが意味不明なので放置
 
 
 - - -
 ja.lproj と同じディレクトリにあるプラグインもパッケージの構造をしているので、右クリックして「パッケージの内容を表示」で必要なファイルをローカライズしていきます。優先順位は3番目です。  
 例) `Espresso.app/Contents/Resources/EspressoPrivate.espressoplugin/Contents/Resources/ja.lproj` (en.lproj をコピーして名称変更)
 
-* EspressoPrivate.espressoplugin
+- EspressoPrivate.espressoplugin
 
 
 以下は編集の必要が無いプラグインです。
 
-* Selectors.espressoplugin
-* Snippets.espressoplugin
-* SyntaxTheme.espressoplugin
+- Selectors.espressoplugin
+- Snippets.espressoplugin
+- SyntaxTheme.espressoplugin
 
 - - -
 Resources と同じディレクトリにある SharedSupport の中にもプラグインがあるのでこちらもローカライズ作業を行います。  
 Espresso.app/Contents/SharedSupport/Plug-Ins
 
-* CSS.espressoplugin
-* Markdown.espressoplugin
-* TEA for Espresso.espressoplugin
-* XML-and-HTML.espressoplugin
+- CSS.espressoplugin
+- Markdown.espressoplugin
+- TEA for Espresso.espressoplugin
+- XML-and-HTML.espressoplugin
 
 以下は編集の必要が無いプラグインです。
 
-* Apache.espressoplugin
-* JavaScript.espressoplugin
-* PHP.espressoplugin
-* Python.espressoplugin
-* Regex.espressoplugin
-* Ruby.espressoplugin
+- Apache.espressoplugin
+- JavaScript.espressoplugin
+- PHP.espressoplugin
+- Python.espressoplugin
+- Regex.espressoplugin
+- Ruby.espressoplugin
 
 
 ローカライズの手順
@@ -109,8 +109,8 @@ Espresso.app/Contents/SharedSupport/Plug-Ins
 Github を利用しますのでデスクトップで作業するには Githubクライアントが必要です。公式アプリの他、サードパーティー製の有料のものもあります。  
 ローカライズ作業は iLocalize.app を使用します。
 
-* [Github.app](https://mac.github.com) / 無料の公式 Github クライアント
-* [iLocalize.app](https://itunes.apple.com/jp/app/ilocalize/id437165919?mt=12) / 無料
+- [Github.app](https://mac.github.com) / 無料の公式 Github クライアント
+- [iLocalize.app](https://itunes.apple.com/jp/app/ilocalize/id437165919?mt=12) / 無料
 
 ([nibTranslate Light.app](https://itunes.apple.com/jp/app/nibtranslate-light/id419607106?mt=12) は使いやすいのですが、無料版だと書き出し機能が無いので今回は iLocalize.app を使用します。)
 
@@ -122,7 +122,7 @@ Github を利用しますのでデスクトップで作業するには Githubク
 
 ####編集してはいけない状態および英文
 
-以下の英文は翻訳しないでください
+以下の英文は翻訳しないでください。（一応該当箇所はロックしています）
 
 1. 状態が = のもの(黒丸の中にイコール)
 2. Text Cell
@@ -132,19 +132,19 @@ Github を利用しますのでデスクトップで作業するには Githubク
 
 ### ローカライズのルール
 
-* 半角記号はそのまま使用。 例) : や ; など。? などの感嘆符、疑問符は全角にしました。
-* 翻訳しない半角英数の前後は半角スペースを入れる。ただし単語の前が句読点や半角記号で終わる場合はそのままとする。 例) クリックすると検索結果を消去。Option + クリックで検索条件を変更
+- 半角記号はそのまま使用。 例) : や ; など。? などの感嘆符、疑問符は全角にしました。
+- 翻訳しない半角英数の前後は半角スペースを入れる。ただし単語の前が句読点や半角記号で終わる場合はそのままとする。 例) クリックすると検索結果を消去。Option + クリックで検索条件を変更
 
 ### ローカライズする .iLocalize ファイル
 拡張子が .iLocalize のファイルをローカライズします。作業しやすいようにトップディレクトリにショートカットを用意しています。  
 
-* Resources>ja_lproj.ilocalize
-* Resources.ilocalize
-* Resources>EspressoPrivate_espressoplugin.ilocalize
-* SharedSupport>Plug-Ins>CSS.ilocalize
-* SharedSupport>Plug-Ins>Markdown.ilocalize
-* SharedSupport>Plug-Ins>TEA.ilocalize
-* SharedSupport>Plug-Ins>XML.ilocalize
+- Resources>ja_lproj.ilocalize
+- Resources.ilocalize
+- Resources>EspressoPrivate_espressoplugin.ilocalize
+- SharedSupport>Plug-Ins>CSS.ilocalize
+- SharedSupport>Plug-Ins>Markdown.ilocalize
+- SharedSupport>Plug-Ins>TEA.ilocalize
+- SharedSupport>Plug-Ins>XML.ilocalize
 
 
 インターフェイスの修正
@@ -152,7 +152,7 @@ Github を利用しますのでデスクトップで作業するには Githubク
 
 以下はローカライズしたテキストが切れるなどの不具合があるので修正が必要なファイルです。
 
-* Espresso.app/Contents/Resources/ja.lproj/EspressoPreferences.nib
+- Espresso.app/Contents/Resources/ja.lproj/EspressoPreferences.nib
 
 
 ローカライズの下準備
