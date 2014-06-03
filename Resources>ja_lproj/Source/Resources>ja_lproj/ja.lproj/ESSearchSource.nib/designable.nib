@@ -100,11 +100,11 @@
                     </buttonCell>
                     <cells>
                         <column>
-                            <buttonCell type="radio" title="Add documents to the Workspace" imagePosition="left" alignment="left" controlSize="small" state="on" inset="2" id="111">
+                            <buttonCell type="radio" title="ワークスペースにドキュメントを追加" imagePosition="left" alignment="left" controlSize="small" state="on" inset="2" id="111">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" metaFont="smallSystem"/>
                             </buttonCell>
-                            <buttonCell type="radio" title="Save documents immediately" imagePosition="left" alignment="left" controlSize="small" tag="1" inset="2" id="112">
+                            <buttonCell type="radio" title="すぐにドキュメントを保存" imagePosition="left" alignment="left" controlSize="small" tag="1" inset="2" id="112">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" metaFont="smallSystem"/>
                             </buttonCell>
@@ -118,13 +118,13 @@
         </customView>
         <menu id="114">
             <items>
-                <menuItem title="Ignore Case" id="115">
+                <menuItem title="大文字小文字を区別しない" id="115">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="toggleCaseInsensitive:" target="-2" id="132"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Use Regular Expressions" id="116">
+                <menuItem title="正規表現を使用する" id="116">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="toggleRegularExpressions:" target="-2" id="133"/>
