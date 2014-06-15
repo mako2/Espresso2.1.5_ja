@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="0.0" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ESSearchSourceController">
+            <connections>
+                <outlet property="multiSearchView" destination="98" id="118"/>
+                <outlet property="replaceAlertAccessoryView" destination="109" id="119"/>
+                <outlet property="replaceAlertBehaviorMatrix" destination="110" id="120"/>
+                <outlet property="replaceButton" destination="101" id="121"/>
+                <outlet property="replaceField" destination="103" id="122"/>
+                <outlet property="searchButton" destination="99" id="123"/>
+                <outlet property="searchField" destination="105" id="124"/>
+                <outlet property="searchOptionsControl" destination="107" id="125"/>
+                <outlet property="searchOptionsMenu" destination="114" id="126"/>
+                <outlet property="view" destination="98" id="127"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="97" customClass="NSApplication"/>
+        <customView id="98">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" id="105" customClass="ESFindField">
+                    <rect key="frame" x="11" y="63" width="158" height="19"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="検索" drawsBackground="YES" id="106" customClass="ESFindFieldCell">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="128"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="103" customClass="ESFindField">
+                    <rect key="frame" x="11" y="36" width="158" height="19"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="置換" drawsBackground="YES" id="104" customClass="ESFindFieldCell">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="129"/>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" id="99" customClass="ESSourceSearchPolishedButton">
+                    <rect key="frame" x="127" y="8" width="43" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="roundRect" title="検索" bezelStyle="roundedRect" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="100" customClass="ESSourceSearchPolishedButtonCell">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="findAll:" target="-2" id="130"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="101" customClass="ESSourceSearchPolishedButton">
+                    <rect key="frame" x="66" y="8" width="55" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="roundRect" title="置換" bezelStyle="roundedRect" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="102" customClass="ESSourceSearchPolishedButtonCell">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="replaceAll:" target="-2" id="131"/>
+                    </connections>
+                </button>
+                <segmentedControl verticalHuggingPriority="750" id="107" customClass="ESSourceSearchPolishedSegmentedControl">
+                    <rect key="frame" x="10" y="8" width="30" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segmentedCell key="cell" alignment="left" style="roundRect" trackingMode="momentary" id="108" customClass="ESSourceSearchPolishedSegmentedCell">
+                        <font key="font" metaFont="smallSystem"/>
+                        <segments>
+                            <segment image="ProjectSearchSettings" width="24"/>
+                        </segments>
+                    </segmentedCell>
+                </segmentedControl>
+            </subviews>
+        </customView>
+        <customView id="109">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" id="110">
+                    <rect key="frame" x="0.0" y="0.0" width="274" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    <size key="cellSize" width="274" height="18"/>
+                    <size key="intercellSpacing" width="4" height="2"/>
+                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" controlSize="small" inset="2" id="113">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                    </buttonCell>
+                    <cells>
+                        <column>
+                            <buttonCell type="radio" title="ワークスペースにドキュメントを追加" imagePosition="left" alignment="left" controlSize="small" state="on" inset="2" id="111">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                            <buttonCell type="radio" title="すぐにドキュメントを保存" imagePosition="left" alignment="left" controlSize="small" tag="1" inset="2" id="112">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="smallSystem"/>
+                            </buttonCell>
+                        </column>
+                    </cells>
+                    <connections>
+                        <binding destination="117" name="selectedTag" keyPath="values.MultiSearchReplacePostProcessingAction" id="134"/>
+                    </connections>
+                </matrix>
+            </subviews>
+        </customView>
+        <menu id="114">
+            <items>
+                <menuItem title="大文字小文字を区別しない" id="115">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleCaseInsensitive:" target="-2" id="132"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="正規表現を使用する" id="116">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleRegularExpressions:" target="-2" id="133"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+        <userDefaultsController representsSharedInstance="YES" id="117"/>
+    </objects>
+    <resources>
+        <image name="ProjectSearchSettings" width="128" height="128"/>
+    </resources>
+</document>

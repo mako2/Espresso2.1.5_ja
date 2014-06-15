@@ -1,0 +1,30 @@
+<pkmkdoc spec="1.12"><properties><title>Espresso 2.1.5 日本語リソース</title><build>/Volumes/Macintosh HD/Users/RECASIN/Documents/ローカライズ/Github/Espresso2.1.5_ja/インストーラ/Espresso 2.1.5 日本語化インストーラ β1.pkg</build><organization>com.rapidweaver5.3.jp</organization><userSees ui="easy"/><min-target os="3"/><domain anywhere="true"/></properties><distribution><versions min-spec="1.000000"/><scripts></scripts></distribution><contents><choice title="Espresso" id="choice55" starts_selected="true" starts_enabled="true" starts_hidden="false"><pkgref id="com.2ch.espresso215.ja.pkg"/></choice></contents><resources bg-scale="none" bg-align="left"><locale lang="ja"><resource mod="true" type="background">/Volumes/Macintosh HD/Users/RECASIN/Documents/ローカライズ/Github/Espresso2.1.5_ja/インストーラ/espresso-icon.png</resource><resource mime-type="text/rtf" kind="embedded" type="readme"><![CDATA[{\rtf1\ansi\ansicpg932\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset128 HiraKakuProN-W3;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue128;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf2 *\cf0  \'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'8b\'82\'b3\'82\'ea\'82\'e9\'93\'fa\'96\'7b\'8c\'ea\'83\'8a\'83\'5c\'81\'5b\'83\'58\'82\'cd\'83\'41\'83\'76\'83\'8a\'83\'50\'81\'5b\'83\'56\'83\'87\'83\'93\'83\'74\'83\'48\'83\'8b\'83\'5f\'82\'c9\'82\'a0\'82\'e9 Espresso \'93\'e0\'82\'c9\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'8b\'82\'b3\'82\'ea\'82\'dc\'82\'b7\'81\'42\'83\'41\'83\'76\'83\'8a\'83\'50\'81\'5b\'83\'56\'83\'87\'83\'93\'83\'74\'83\'48\'83\'8b\'83\'5f\'93\'e0\'82\'c9\'8d\'ec\'90\'ac\'82\'b5\'82\'bd\'83\'74\'83\'48\'83\'8b\'83\'5f\'82\'e2\'91\'bc\'82\'cc\'8f\'ea\'8f\'8a\'82\'c9 Espresso \'82\'f0\'95\'db\'91\'b6\'82\'b5\'82\'c4\'82\'a2\'82\'e9\'8f\'ea\'8d\'87\'82\'c9\'82\'cd\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'8b\'8e\'9e\'82\'c9\'95\'db\'91\'b6\'8f\'ea\'8f\'8a\'82\'f0\'8e\'77\'92\'e8\'82\'b5\'82\'c4\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42\
+\
+\cf2 *\cf0  \'83\'41\'83\'76\'83\'8a\'83\'50\'81\'5b\'83\'56\'83\'87\'83\'93\'96\'bc\'82\'f0\'95\'cf\'8d\'58\'82\'b5\'82\'c4\'82\'a2\'82\'e9\'8f\'ea\'8d\'87\'82\'cd\'81\'69Espresso 2.1 \'82\'c8\'82\'c7\'81\'6a\'81\'41\'8c\'b3\'82\'cc\'8f\'f3\'91\'d4\'81\'69Espresso\'81\'6a\'82\'c9\'96\'df\'82\'b5\'82\'c4\'82\'a9\'82\'e7\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'89\'82\'f0\'8e\'67\'97\'70\'82\'b5\'82\'c4\'89\'ba\'82\'b3\'82\'a2\'81\'42\
+\
+\cf2 *\cf0  Espresso \'82\'cc\'8e\'64\'97\'6c\'82\'c9\'82\'e6\'82\'e8\'82\'b7\'82\'d7\'82\'c4\'82\'cc\'8d\'80\'96\'da\'82\'aa\'93\'fa\'96\'7b\'8c\'ea\'89\'bb\'82\'b3\'82\'ea\'82\'e9\'96\'f3\'82\'c5\'82\'cd\'82\'a0\'82\'e8\'82\'dc\'82\'b9\'82\'f1\'81\'42\'82\'dc\'82\'bd\'96\'a2\'96\'7c\'96\'f3\'95\'94\'95\'aa\'82\'aa\'91\'bd\'82\'ad\'8e\'63\'82\'c1\'82\'c4\'82\'a2\'82\'dc\'82\'b7\'81\'42\'81\'69\'83\'74\'83\'42\'81\'5b\'83\'68\'83\'6f\'83\'62\'83\'4e\'82\'cc\'82\'b2\'8b\'a6\'97\'cd\'82\'f0\'82\'a8\'8a\'e8\'82\'a2\'82\'b5\'82\'dc\'82\'b7\'81\'6a\
+\
+\cf2 *\cf0  \'82\'b1\'82\'cc\'93\'fa\'96\'7b\'8c\'ea\'83\'8a\'83\'5c\'81\'5b\'83\'58\'82\'cd Espresso \'82\'cc\'93\'ae\'8d\'ec\'82\'f0\'95\'db\'8f\'d8\'82\'b7\'82\'e9\'82\'e0\'82\'cc\'82\'c5\'82\'cd\'82\'a0\'82\'e8\'82\'dc\'82\'b9\'82\'f1\'81\'42\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'8b\'82\'cd\'8e\'a9\'8c\'c8\'90\'d3\'94\'43\'82\'c5\'82\'a8\'8a\'e8\'82\'a2\'82\'a2\'82\'bd\'82\'b5\'82\'dc\'82\'b7\'81\'42\
+\
+\cf2 *\cf0  \'95\'73\'8b\'ef\'8d\'87\'82\'aa\'90\'b6\'82\'b6\'82\'bd\'8f\'ea\'8d\'87\'82\'cd\'83\'41\'83\'76\'83\'8a\'83\'50\'81\'5b\'83\'56\'83\'87\'83\'93\'83\'74\'83\'48\'83\'8b\'83\'5f\'82\'cc\'92\'86\'82\'cc Espresso \'82\'f0\'8d\'ed\'8f\'9c\'82\'b5\'82\'c4\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'8b\'82\'b5\'92\'bc\'82\'b5\'82\'c4\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42\
+{\field{\*\fldinst{HYPERLINK "http://macrabbit.com/espresso/get/"}}{\fldrslt http://macrabbit.com/espresso/get/}}\
+\
+\cf2 *\cf0  \'82\'b1\'82\'cc\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'89\'81\'5b\'82\'cd\'83\'6f\'81\'5b\'83\'57\'83\'87\'83\'932.1.5\'90\'ea\'97\'70\'82\'c5\'82\'b7\'81\'42\'91\'bc\'82\'cc\'83\'6f\'81\'5b\'83\'57\'83\'87\'83\'93\'82\'c5\'8e\'67\'97\'70\'82\'b7\'82\'e9\'82\'c6\'95\'73\'8b\'ef\'8d\'87\'82\'aa\'8b\'4e\'82\'b1\'82\'e9\'89\'c2\'94\'5c\'90\'ab\'82\'aa\'82\'a0\'82\'e8\'82\'dc\'82\'b7\'81\'42}]]></resource><resource mime-type="text/rtf" kind="embedded" type="welcome"><![CDATA[{\rtf1\ansi\ansicpg932\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset128 HiraKakuProN-W3;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf0 \'82\'b1\'82\'cc\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'89\'82\'cd Espresso \'82\'cc\'83\'6f\'81\'5b\'83\'57\'83\'87\'83\'932.1.5 \'82\'f0\'93\'fa\'96\'7b\'8c\'ea\'89\'bb\'82\'b7\'82\'e9\'82\'bd\'82\'df\'82\'cc\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'89\'82\'c5\'82\'b7\'81\'42\
+\
+\'83\'8d\'81\'5b\'83\'4a\'83\'89\'83\'43\'83\'59\'83\'74\'83\'40\'83\'43\'83\'8b\'92\'75\'82\'ab\'8f\'ea\
+Github : {\field{\*\fldinst{HYPERLINK "https://github.com/mako2/Espresso2.1.5_ja.git"}}{\fldrslt 
+\f1 https://github.com/mako2/Espresso2.1.5_ja.git}}\
+\
+\'90\'bb\'8d\'ec\'8e\'d2\
+\'90\'56Mac\'94\'c2\'81\'41Espresso\'81\'46Web\'91\'8d\'8d\'87\'8a\'4a\'94\'ad\'8a\'c2\'8b\'ab\'81\'79MacRabbit\'81\'7a\'83\'58\'83\'8c\'83\'62\'83\'68\'82\'cc\'97\'4c\'8e\'75\'88\'ea\'93\'af\'81\'41\'92\'86\'93\'72\'94\'bc\'92\'5b\'82\'c9\'8e\'64\'90\'d8\'82\'c1\'82\'c4\'82\'e9\'90\'6c\
+{\field{\*\fldinst{HYPERLINK "http://anago.2ch.net/test/read.cgi/mac/1321757964/"}}{\fldrslt http://anago.2ch.net/test/read.cgi/mac/1321757964/}}}]]></resource></locale></resources><flags/><item type="file">01espresso.xml</item><mod>properties.title</mod><mod>postinstallActions.actions</mod><mod>description</mod></pkmkdoc>

@@ -1,0 +1,12 @@
+﻿"com.macrabbit.text-actions.css.new-style.snippet-fragment(style-name)" = "スタイル";
+"com.macrabbit.text-actions.css.new-group.snippet-fragment(group-name)" = "名称未設定グループ";
+
+"com.macrabbit.text-actions.css.new-style.title" = "新規スタイル";
+"com.macrabbit.text-tools.css.new-style.label" = "新規スタイル";
+"com.macrabbit.text-tools.css.new-style.tooltip" = "Add a new style rule";
+"com.macrabbit.text-tools.css.new-style.default-name" = "スタイル";
+
+"com.macrabbit.text-actions.css.new-group.title" = "新規グループ";
+"com.macrabbit.text-tools.css.new-group.label" = "新規グループ";
+"com.macrabbit.text-tools.css.new-group.tooltip" = "新規グループに追加; グループ化する複数の項目を選択します";
+"com.macrabbit.text-tools.css.new-group.default-name" = "名称未設定グループ";

@@ -1,0 +1,28 @@
+"actions.markdown.title" = "Markdown";
+"markdown.hr.title" = "Horizontal Rules";
+
+"com.macrabbit.sugars.markdown.wrap-bold.title" = "Bold";
+"com.macrabbit.sugars.markdown.wrap-italics.title" = "Italic";
+"com.macrabbit.sugars.markdown.wrap-code.title" = "Inline Code";
+"com.macrabbit.sugars.markdown.wrap-selection-in-image.title" = "Image";
+"com.macrabbit.sugars.markdown.wrap-selection-in-link.title" = "Link";
+
+"com.macrabbit.sugars.markdown.insert-blockquote.title" = "Blockquote";
+
+"com.macrabbit.sugars.markdown.list-insert-unordered.title" = "Unordered List";
+"com.macrabbit.sugars.markdown.list-insert-ordered.title" = "Ordered List";
+"com.macrabbit.sugars.markdown.list-update-ordered-elements.title" = "Renumber Ordered List";
+"com.macrabbit.sugars.markdown.list-newline.title" = "Insert New List Element";
+
+"com.macrabbit.sugars.markdown.increase-header.title" = "Increase Header Level";
+"com.macrabbit.sugars.markdown.decrease-header.title" = "Decrease Header Level";
+"com.macrabbit.sugars.markdown.setext-header-1.title" = "Setext Header Level 1";
+"com.macrabbit.sugars.markdown.setext-header-2.title" = "Setext Header Level 2";
+"com.macrabbit.sugars.markdown.setext-header-update.title" = "Update Setext Underline";
+
+"com.macrabbit.sugars.markdown.hr-asterisk.title" = "* * *";
+"com.macrabbit.sugars.markdown.hr-hyphen.title" = "- - -";
+"com.macrabbit.sugars.markdown.hr-underscore.title" = "_____";
+
+"com.macrabbit.sugars.markdown.convert-in-place.title" = "Convert Document To HTML";
+"com.macrabbit.sugars.markdown.convert-in-place.title.selection" = "Convert Selection To HTML";
