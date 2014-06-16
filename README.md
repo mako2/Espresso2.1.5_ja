@@ -152,12 +152,17 @@ Github を利用しますのでデスクトップで作業するには Githubク
 
 以下はローカライズしたテキストが切れるなどの不具合があるので修正が必要なファイルです。
 
-- Espresso.app/Contents/Resources/ja.lproj/EspressoPreferences.nib
-- Espresso.app/Contents/Resources/ja.lproj/SugarUpdater.nib
-- Espresso.app/Contents/Resources/ja.lproj/GotoLine.nib
-- Espresso.app/Contents/Resources/ja.lproj/ProjectManager.nib
-- Espresso.app/Contents/Resources/ja.lproj/UserSnippetsManager.nib
-- Espresso.app/Contents/Resources/ja.lproj/XRayInspector.nib
+- Espresso.app/Contents/Resources/EspressoPreferences.nib
+- Espresso.app/Contents/Resources/SugarUpdater.nib
+- Espresso.app/Contents/Resources/GotoLine.nib
+- Espresso.app/Contents/Resources/ProjectManager.nib
+- Espresso.app/Contents/Resources/UserSnippetsManager.nib
+- Espresso.app/Contents/Resources/XRayInspector.nib
+- Espresso.app/Contents/Resources/MRProgressPanel.nib
+- Espresso.app/Contents/Resources/Welcome.nib
+- Espresso.app/Contents/Resources/EKSyntaxInspector.nib
+- Espresso.app/Contents/Resources/ja.lproj/ServerBookmarkEditor.nib
+- Espresso.app/Contents/Resources/ja.lproj/StyleFontPanel.nib
 
 
 ローカライズの下準備
