@@ -19,19 +19,19 @@
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="24" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="466" y="468" width="358" height="119"/>
+            <rect key="contentRect" x="466" y="468" width="369" height="120"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
             <value key="minSize" type="size" width="213" height="40"/>
             <view key="contentView" id="25">
-                <rect key="frame" x="0.0" y="0.0" width="358" height="119"/>
+                <rect key="frame" x="0.0" y="0.0" width="369" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <progressIndicator verticalHuggingPriority="750" maxValue="1" bezeled="NO" indeterminate="YES" style="bar" id="26">
-                        <rect key="frame" x="98" y="18" width="154" height="20"/>
+                        <rect key="frame" x="98" y="19" width="154" height="20"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     </progressIndicator>
                     <textField verticalHuggingPriority="750" id="27">
-                        <rect key="frame" x="97" y="60" width="244" height="14"/>
+                        <rect key="frame" x="97" y="61" width="244" height="14"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" controlSize="small" selectable="YES" sendsActionOnEndEditing="YES" alignment="left" title="&lt;Do not localize>" id="28">
                             <font key="font" metaFont="smallSystem"/>
@@ -40,7 +40,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" id="29">
-                        <rect key="frame" x="262" y="12" width="82" height="32"/>
+                        <rect key="frame" x="262" y="13" width="93" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="キャンセル" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="30">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -54,7 +54,7 @@ Gw
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" id="31">
-                        <rect key="frame" x="97" y="82" width="244" height="17"/>
+                        <rect key="frame" x="97" y="83" width="244" height="17"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="&lt;Do not localize>" id="32">
                             <font key="font" metaFont="systemBold"/>
@@ -63,7 +63,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <imageView id="33">
-                        <rect key="frame" x="20" y="35" width="64" height="64"/>
+                        <rect key="frame" x="20" y="36" width="64" height="64"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="34"/>
                     </imageView>

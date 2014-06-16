@@ -72,7 +72,7 @@
                         </scroller>
                     </scrollView>
                     <searchField verticalHuggingPriority="750" id="139" customClass="MRHUDSearchField">
-                        <rect key="frame" x="50" y="291" width="225" height="19"/>
+                        <rect key="frame" x="64" y="291" width="211" height="19"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <searchFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" borderStyle="bezel" placeholderString="Selector" bezelStyle="round" sendsSearchStringImmediately="YES" sendsWholeSearchString="YES" id="140">
                             <font key="font" metaFont="smallSystem"/>
@@ -85,9 +85,9 @@
                         </connections>
                     </searchField>
                     <textField verticalHuggingPriority="750" id="141" customClass="MRHUDTextField">
-                        <rect key="frame" x="7" y="293" width="38" height="14"/>
+                        <rect key="frame" x="7" y="293" width="52" height="14"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Filter:" id="142">
+                        <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="フィルタ:" id="142">
                             <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -110,7 +110,7 @@
                     <textField verticalHuggingPriority="750" id="145" customClass="MRHUDTextField">
                         <rect key="frame" x="7" y="7" width="271" height="11"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                        <textFieldCell key="cell" controlSize="mini" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="146">
+                        <textFieldCell key="cell" controlSize="mini" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="ラベル" id="146">
                             <font key="font" metaFont="miniSystem"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>

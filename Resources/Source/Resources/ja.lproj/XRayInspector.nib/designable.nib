@@ -103,7 +103,7 @@
                     <popUpButton verticalHuggingPriority="750" id="77" customClass="HUDPopUpButton">
                         <rect key="frame" x="40" y="8" width="101" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="新規スタイル" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" refusesFirstResponder="YES" state="on" borderStyle="borderAndBezel" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="80" id="78">
+                        <popUpButtonCell key="cell" type="push" title="新規スタイル" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" refusesFirstResponder="YES" state="on" borderStyle="borderAndBezel" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="78">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
                             <menu key="menu" title="OtherViews" id="79">

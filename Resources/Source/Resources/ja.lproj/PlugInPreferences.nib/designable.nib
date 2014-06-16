@@ -37,12 +37,12 @@
                         <popUpButton verticalHuggingPriority="750" id="71">
                             <rect key="frame" x="163" y="16" width="180" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <popUpButtonCell key="cell" type="push" title="&lt;Do Not Localize>" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="74" id="72">
+                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="72">
                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="menu"/>
                                 <menu key="menu" title="OtherViews" id="73">
                                     <items>
-                                        <menuItem title="&lt;Do Not Localize>" state="on" id="74"/>
+                                        <menuItem title="&lt;Do Not Localize>" id="74"/>
                                     </items>
                                 </menu>
                             </popUpButtonCell>
