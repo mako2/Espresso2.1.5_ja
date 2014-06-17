@@ -150,7 +150,7 @@ Github を利用しますのでデスクトップで作業するには Githubク
 インターフェイスの修正
 -----------------
 
-以下はローカライズしたテキストが切れるなどの不具合があるので修正が必要なファイルです。
+以下はローカライズしたテキストが切れるなどの不具合があるので修正が必要なファイルです。随時追加していきます。
 
 - Espresso.app/Contents/Resources/EspressoPreferences.nib
 - Espresso.app/Contents/Resources/SugarUpdater.nib
